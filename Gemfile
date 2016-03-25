@@ -7,6 +7,7 @@ gem 'pg', '~> 0.18'
 gem 'puma'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+gem 'bcrypt'
 
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5.x'
