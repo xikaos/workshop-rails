@@ -71,6 +71,8 @@ GEM
     mime-types-data (3.2016.0221)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
+    minitest-utils (0.2.7)
+      minitest
     multi_json (1.11.2)
     nio4r (1.2.1)
     nokogiri (1.6.7.2)
@@ -162,6 +164,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   listen (~> 3.0.5)
+  minitest-utils
   pg (~> 0.18)
   pry-meta
   puma

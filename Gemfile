@@ -16,6 +16,10 @@ group :development, :test do
   gem 'pry-meta'
 end
 
+group :test do 
+	gem 'minitest-utils'
+end
+
 group :development do
   gem 'listen', '~> 3.0.5'
 end	
