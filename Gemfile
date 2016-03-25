@@ -18,6 +18,7 @@ end
 
 group :test do 
 	gem 'minitest-utils'
+  gem 'capybara'
 end
 
 group :development do
