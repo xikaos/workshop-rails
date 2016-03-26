@@ -1,2 +1,31 @@
+<style>
+div {
+  margin: 10px auto;
+}
+
+</style>
 <h1>Signup#new</h1>
-<p></p>
+<%= form_for @user, url: "/signup" do |f| %>
+  <div>
+    <!-- HALT-DOING -->
+    <%= f.label :name, "Your name" %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :email, "Your e-mail" %>
+    <%= f.email_field :email %>
+  </div>
+  <div>
+    <%= f.label :password, "Your password" %>
+    <%= f.password_field :password %>
+  </div>
+  <div>
+    <%= f.label :password_confirmation, "Confirm your password" %>
+    <%= f.password_field :password_confirmation %>
+  </div>
+
+  <div>
+    <%= f.submit "Create my account" %>
+  </div>
+
+<%end%>

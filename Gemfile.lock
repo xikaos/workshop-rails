@@ -172,6 +172,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   bcrypt
   capybara
   jbuilder (~> 2.0)

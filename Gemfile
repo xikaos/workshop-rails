@@ -15,6 +15,7 @@ gem 'jbuilder', '~> 2.0'
 
 group :development, :test do
   gem 'pry-meta'
+  gem 'awesome_print'
 end
 
 group :test do 
