@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   get "/signup" => "signup#new"
   post "/signup" => "signup#create"
 
-  get "login" => "pages#login"
+  get "/login" => "login#new"
   
 end

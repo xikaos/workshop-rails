@@ -15,7 +15,7 @@ class SignupTest < ActionDispatch::IntegrationTest
     click_on "Create my account"
 
     assert_equal "/login", page.current_path
-    assert page.has_text?("Login")
+    assert page.has_text?("Your account has been created.")
 
   end
 end
