@@ -4,6 +4,17 @@ div {
 }
 
 </style>
+<% if @user.errors.any? %>
+  <p>Invalid input.</p>
+    <ul>
+      <% for msg in @user.errors.full_messages %>
+        <li>
+          <%= msg %>
+        </li>
+      <% end %>
+    </ul>
+<% end %>
+
 <h1>Signup#new</h1>
 <%= form_for @user, url: "/signup" do |f| %>
   <div>

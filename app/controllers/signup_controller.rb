@@ -9,6 +9,8 @@ class SignupController < ApplicationController
   
     if @user.save
       redirect_to "/login", notice: "Your account has been created."
+    else
+      render :new
     end
   end
 
