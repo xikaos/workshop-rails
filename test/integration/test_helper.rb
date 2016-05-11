@@ -1,7 +1,7 @@
 ENV['RAILS_ENV'] ||= 'test'
 require 'test_helper'
 require "minitest/utils/rails"
-require 'support/factories'
+require 'support/factories.rb'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 

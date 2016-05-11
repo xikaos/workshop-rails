@@ -1,5 +1,4 @@
 require "test_helper"
-
 class UserTest < ActiveSupport::TestCase
 
   test "requires name" do
@@ -18,17 +17,21 @@ class UserTest < ActiveSupport::TestCase
     cami-shchleder-linda@hotmail.com
     alcindoschleder@gov.rs.br
     jururu@kkkkkk.com
-  ].each do |email|
+    xsikaoswow@gmail.com
+    fsnando@gmail.com
+    csami-shchleder-linda@hotmail.com
+    aslcindoschleder@gov.rs.br
+    jsururu@kkkkkk.com
+  ].each do   |email|
     test "accept valid email format (#{email})" do
       user = User.create(email: email)
       assert user.errors[:email].empty?
     end
-  end
+  end 
 
   test "rejects duplicate email" do
-    user = User.create!(name: "John", email: "john@example.lul", password: "test")
-    another_user = User.create(name: "Johnny", email: "john@example.lul", password: "test") 
-
+    user = FactoryGirl.create(:user)
+    another_user = User.create(email: user.email)
     refute another_user.errors.empty? 
   end
 

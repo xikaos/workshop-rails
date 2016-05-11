@@ -34,3 +34,4 @@ class SignupTest < ActionDispatch::IntegrationTest
   end
 
 end
+''
